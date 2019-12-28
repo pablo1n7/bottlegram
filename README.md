@@ -6,7 +6,15 @@
 Bottlegram is a tool for creating telegram Bots for Pharo. This library provides a interface for the [Telegram Bot API](https://core.telegram.org/bots/api.).
 
 
-# Example
+# Basic usage
+
+Must create a new object inherit from Bottlegram. This object must define three methods: 'slashStart', 'slashHelp', 'defaultText'.
+
+slashStart: This method execute when the bot receives '/start'.
+
+slashHelp: This method execute when the bot receives '/help'.
+
+defaultText: This method execute when the bot receives command unknows or not defined.
 
 ```smalltalk
 
@@ -27,15 +35,6 @@ slashStart: aMessage
 
 
 ```
-
-Must create a new object inherit from Bottlegram. This object must define three methods: 'slashStart', 'slashHelp', 'defaultText'.
-
-slashStart: This method execute when the bot receives '/start'.
-
-slashHelp: This method execute when the bot receives '/help'.
-
-defaultText: This method execute when the bot receives command unknows or not defined. 
-
 If you want to define new commands or behavior must be add in registerCommand and define the method in the object.
 
 ```smalltalk
@@ -43,13 +42,13 @@ If you want to define new commands or behavior must be add in registerCommand an
 ```
 
 
-# Basic usage
+# Example usage
 
 ```smalltalk
 
 echoBotte:=EchoBottle new:'API TOKEN OBTAIN in BotFather'.
-echoBotte startBot:1. # Polling each 1 second.
-echoBotte isRun. #true
+echoBotte startBot:1. "Polling each 1 second."
+echoBotte isRun. "true"
 echoBotte stopBot.
 
 ```
