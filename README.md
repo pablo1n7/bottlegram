@@ -10,11 +10,11 @@ Bottlegram is a tool for creating telegram Bots for Pharo. This library provides
 
 Must create a new object inherit from Bottlegram. This object must define three methods: 'slashStart', 'slashHelp', 'defaultText'.
 
-slashStart: This method execute when the bot receives '/start'.
+⋅⋅* slashStart: This method execute when the bot receives '/start'.
 
-slashHelp: This method execute when the bot receives '/help'.
+⋅⋅* slashHelp: This method execute when the bot receives '/help'.
 
-defaultText: This method execute when the bot receives command unknows or not defined.
+⋅⋅* defaultText: This method execute when the bot receives command unknows or not defined.
 
 ```smalltalk
 
