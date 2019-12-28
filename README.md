@@ -52,3 +52,10 @@ echoBotte isRun. "true"
 echoBotte stopBot.
 
 ```
+# Example online: [EchoPharoBot](https://t.me/echo_pharo_bot)
+
+# TODO: 
+* [ ] More documentation.
+* [ ] Support Webhook.
+* [ ] Support bots inline.
+* [ ] Support images, sounds, etc.
