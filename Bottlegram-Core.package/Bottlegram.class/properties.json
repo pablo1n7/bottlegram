@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Bottlegram-Core",
+	"classinstvars" : [
+		"initialize"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"baseURL",
+		"botID",
+		"lastMessage",
+		"processFork",
+		"commandBot",
+		"lastUpdate"
+	],
+	"name" : "Bottlegram",
+	"type" : "normal"
+}

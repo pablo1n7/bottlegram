@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Bottlegram",
+	"category" : "Bottlegram-Example",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ClimaBottle",
+	"type" : "normal"
+}

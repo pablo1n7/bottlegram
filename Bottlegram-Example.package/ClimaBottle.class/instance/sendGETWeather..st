@@ -1,0 +1,12 @@
+action
+sendGETWeather: aActionURL
+	"comment stating purpose of instance-side message"
+	"scope: class-variables  &  instance-variables"	
+			
+	| response |
+	response := (ZnClient new)
+				url:aActionURL;    
+				get;
+				response. 
+	
+	^(STONJSON fromString: response contents)

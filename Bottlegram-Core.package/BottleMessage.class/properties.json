@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Bottlegram-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"from",
+		"date",
+		"chat",
+		"text",
+		"bot"
+	],
+	"name" : "BottleMessage",
+	"type" : "normal"
+}
