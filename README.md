@@ -35,7 +35,7 @@ slashStart: aMessage
 
 
 ```
-If you want to define new commands or behavior must be add in registerCommand and define the method in the object.
+If you want to define new commands or behavior must be add with 'registerCommand' and define the method in the object.
 
 ```smalltalk
  registerCommand: #slashWeather: to: '/weather'.
