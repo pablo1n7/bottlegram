@@ -63,7 +63,6 @@ echoBotte stopBot. "To stop the bot and the polling process"
 
 ```
 
-#### Chat with [EchoPharoBot](https://t.me/echo_pharo_bot)!
 
 ### TODO: 
 * [ ] Add more documentation.
