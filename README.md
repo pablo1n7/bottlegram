@@ -1,4 +1,3 @@
-# 
 
 <p align="center">
   <img height="200" src="readme_assets/bottlegram_logo.jpg" alt="bottlegram for pharo logo">
@@ -41,25 +40,25 @@ slashStart: aMessage
 
 #### Defining new behavior
 
-We can define new behavior for our bot by implementing new methods for it and associating them with a tag like: `#slashMyNewBehaviour` and the corresponding command for the bot, like `/myNewBehavior`. 
+We can define new behavior for our bot by implementing new methods for it. Then we need to associate them to a tag like: `#slashMyNewBehaviour` and the corresponding command for the bot, like `/myNewBehavior`. 
 Where `slashMyNewBehaviour` must match with the name of our new method. 
 
-To do this we will call `registerCommand`. For example:
+To do this, we will call `registerCommand`. For example:
 
 ```smalltalk
  registerCommand: #slashWeather: to: '/weather'.
 ```
-So when the bot receives a message with `/weather` it will invoke its `slashWeather` method.
+So when the bot receives the message `/weather`, it will call its `slashWeather` method.
 
 ### Example
 
-To use the Echo bot that we created we will do something like this:
+Then, to start the Echo bot that we have created:
 
 ```smalltalk
 
 echoBotte:=EchoBottle new:'paste here the API TOKEN obtained from the BotFather'.
 echoBotte startBot:1. "Polling updates every second."
-echoBotte isRun. "true"
+echoBotte isRun. "To know whether the bot is running or not."
 echoBotte stopBot. "To stop the bot and the polling process"
 
 ```
@@ -67,7 +66,7 @@ echoBotte stopBot. "To stop the bot and the polling process"
 #### Chat with [EchoPharoBot](https://t.me/echo_pharo_bot)!
 
 ### TODO: 
-* [ ] More documentation.
+* [ ] Add more documentation.
 * [ ] Add Webhook support.
 * [ ] Add support for inline bots.
 * [ ] Add support for images, sounds, etc.
