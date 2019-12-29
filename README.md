@@ -1,4 +1,3 @@
-# 
 
 <p align="center">
   <img height="200" src="readme_assets/bottlegram_logo.jpg" alt="bottlegram for pharo logo">
