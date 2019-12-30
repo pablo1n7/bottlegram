@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "BaselineOf",
-	"category" : "Bottlegram-Core",
+	"category" : "BaselineOfBottlegram",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
