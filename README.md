@@ -7,6 +7,14 @@
 
 Bottlegram is a tool for creating telegram Bots with Pharo. This library provides a interface for the [Telegram Bot API](https://core.telegram.org/bots/api.).
 
+### Install
+
+```smalltalk
+Metacello new
+  baseline: #Bottlegram;
+  repository: 'github://pablo1n7/bottlegram';
+  load.
+```
 
 ### Basic usage
 
