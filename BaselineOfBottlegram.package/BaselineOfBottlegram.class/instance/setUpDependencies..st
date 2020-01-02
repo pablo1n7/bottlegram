@@ -4,6 +4,6 @@ setUpDependencies: spec
 	spec
 		baseline: 'Teapot'
 			with: [ spec
-				repository: 'github://zeroflag/Teapot/source';
-				loads: #('Deployment') ];
+				repository: 'github://zeroflag/teapot:master/source';
+				load ];
 		import: 'Teapot'.
