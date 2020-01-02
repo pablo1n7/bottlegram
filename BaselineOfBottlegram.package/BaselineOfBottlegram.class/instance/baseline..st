@@ -4,4 +4,5 @@ baseline: spec
 	spec
 		for: #common
 		do: [ spec package: 'Bottlegram-Core'.
-			spec group: 'default' with: #('Bottlegram-Core') ]
+		      spec package: 'Bottlegram-Example'.
+		      spec package: 'Bottlegram-Exceptions'.]
