@@ -1,5 +1,5 @@
 system startup
-startBot: aSecond
+startBotPulling: aSecond
 	"comment stating purpose of instance-side message"
 	"scope: class-variables  &  instance-variables"	
 	|processBlock|

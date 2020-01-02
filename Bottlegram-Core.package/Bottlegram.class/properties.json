@@ -13,7 +13,9 @@
 		"lastMessage",
 		"processFork",
 		"commandBot",
-		"lastUpdate"
+		"lastUpdate",
+		"webhook",
+		"port"
 	],
 	"name" : "Bottlegram",
 	"type" : "normal"
