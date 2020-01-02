@@ -10,7 +10,7 @@ startBot
 								response := STONJSON fromString: (req entity string).
 								aMessages := response at:'message'.
 								aMessage := BottleMessage new: aMessages bot:self.
-								self actionBot: aMessage.
-								self halt ];
-    start.
+								self actionBot: aMessage.];
+			 GET: '/' -> 'Bonjour!';
+    		 start.
 	"self getUpdates:true do:[:each| self actionBot:each.]"
