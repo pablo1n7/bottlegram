@@ -4,5 +4,5 @@ checkBot
 	"scope: class-variables  &  instance-variables"
 	| result |
 	result := self sendGET:'/getMe'.
-	(result at: 'ok') ifFalse:[ InvalidBot new signal.]
+	"(result at: 'ok') ifFalse:[ InvalidBot new signal.]"
 	
