@@ -80,7 +80,7 @@ echoBotte stopBot. "To stop the bot and the server Webhook"
 
 ```
 
-### Example Online: [EchoPharo](https://t.me/echo_pharo_bot)
+### Example Online: [EchoPharo](https://t.me/echo_pharo_bot)
 
 
 ### TODO: 
