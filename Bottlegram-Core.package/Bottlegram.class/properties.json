@@ -15,7 +15,8 @@
 		"commandBot",
 		"lastUpdate",
 		"webhook",
-		"port"
+		"port",
+		"teapot"
 	],
 	"name" : "Bottlegram",
 	"type" : "normal"

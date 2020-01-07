@@ -4,3 +4,4 @@ stopBot
 	"scope: class-variables  &  instance-variables"	
 	self isRun ifTrue:[self processFork terminate ].
 	self processFork: nil.
+	self teapot ifNotNil: [ self teapot stop. ]

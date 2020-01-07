@@ -2,10 +2,10 @@ system startup
 startBot
 	"comment stating purpose of instance-side message"
 	"scope: class-variables  &  instance-variables"
-	|teapot|
+	|aTeapot|
 	self webhook ifNil: [Exception signal: 'you must set a webhook'].
-	teapot := Teapot configure: {#defaultOutput -> #json. #port -> self port. #debugMode -> true }.
-	teapot POST: '/'-> [ :req | 
+	aTeapot := Teapot configure: {#defaultOutput -> #json. #port -> self port. #debugMode -> true }.
+	aTeapot POST: '/'-> [ :req | 
 								|response aMessages aMessage|
 								response := STONJSON fromString: (req entity string).
 								aMessages := response at:'message'.
@@ -13,4 +13,5 @@ startBot
 								self actionBot: aMessage.];
 			 GET: '/' -> 'Bonjour!';
     		 start.
+	self teapot: aTeapot.
 	"self getUpdates:true do:[:each| self actionBot:each.]"
