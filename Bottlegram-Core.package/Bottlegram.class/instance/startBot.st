@@ -4,7 +4,7 @@ startBot
 	"scope: class-variables  &  instance-variables"
 	|aTeapot|
 	self webhook ifNil: [Exception signal: 'you must set a webhook'].
-	aTeapot := Teapot configure: {#defaultOutput -> #json. #port -> self port. #debugMode -> true }.
+	aTeapot := Teapot configure: {#port -> self port. #debugMode -> false }.
 	aTeapot POST: '/'-> [ :req | 
 								|response aMessages aMessage|
 								response := STONJSON fromString: (req entity string).
