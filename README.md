@@ -58,22 +58,30 @@ To do this, we will call `registerCommand`. For example:
 ```
 So when the bot receives the message `/weather`, it will call its `slashWeather` method.
 
-### Example
+### Example using polling
 
 Then, to start the Echo bot that we have created:
 
 ```smalltalk
 
 echoBotte:=EchoBottle new:'paste here the API TOKEN obtained from the BotFather'.
-echoBotte startBot:1. "Polling updates every second."
-echoBotte isRun. "To know whether the bot is running or not."
+echoBotte startBotPulling:1. "Polling updates every second."
 echoBotte stopBot. "To stop the bot and the polling process"
+
+```
+
+### Example using Webhook
+```smalltalk
+
+echoBotte:=EchoBottle new:'paste here the API TOKEN obtained from the BotFather'.
+echoBotte registerWebhook: 'URL' port: 8080.
+echoBotte startBot.
+echoBotte stopBot. "To stop the bot and the server Webhook"
 
 ```
 
 
 ### TODO: 
 * [ ] Add more documentation.
-* [ ] Add Webhook support.
 * [ ] Add support for inline bots.
 * [ ] Add support for images, sounds, etc.
